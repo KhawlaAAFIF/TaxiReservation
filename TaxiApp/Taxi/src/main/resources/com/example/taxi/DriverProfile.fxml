@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taxi.DriverProfile">
+   <children>
+      <Pane layoutX="151.0" prefHeight="401.0" prefWidth="452.0" style="-fx-background-color: #a2e3c4;">
+         <children>
+            <Text layoutX="24.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text layoutX="24.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+            <Text layoutX="24.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+            <Text layoutX="24.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Type" />
+            <Text layoutX="242.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+            <Text layoutX="238.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <PasswordField fx:id="passwordField" layoutX="237.0" layoutY="159.0" />
+            <Button fx:id="submitButton" layoutX="287.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleSaveButtonClick" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #4d4dff;" text="Update" />
+            <TextField fx:id="fullNameTextField" layoutX="10.0" layoutY="102.0" />
+            <TextField fx:id="phoneTextField" layoutX="223.0" layoutY="103.0" />
+            <TextField fx:id="emailTextField" layoutX="10.0" layoutY="165.0" />
+            <TextField fx:id="cityTextField" layoutX="10.0" layoutY="236.0" />
+            <TextField fx:id="carTypeTextField" layoutX="10.0" layoutY="320.0" />
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Profile" wrappingWidth="107.91275787353516">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

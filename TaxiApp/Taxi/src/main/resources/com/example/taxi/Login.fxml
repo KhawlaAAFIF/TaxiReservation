@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ccffffffff33;"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.taxi.Login">
+   <ImageView fitHeight="400.0" fitWidth="297.0">
+      <Image url="@../../../images/login.jpg"/>
+   </ImageView>
+   <Pane layoutX="314.0" layoutY="66.0" prefHeight="287.0" prefWidth="259.0" style="-fx-background-color: ebf5ee;">
+      <TextField fx:id="emailField" layoutX="86.0" layoutY="97.0" prefHeight="25.0" prefWidth="159.0"/>
+      <PasswordField fx:id="passwordField" layoutX="86.0" layoutY="143.0" prefHeight="25.0" prefWidth="159.0"/>
+      <Text layoutX="14.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email"
+            wrappingWidth="33.6575927734375"/>
+      <Text layoutX="14.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password"/>
+      <Text layoutX="117.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login"
+            wrappingWidth="74.77667236328125">
+         <font>
+            <Font name="Serif Regular" size="18.0"/>
+         </font>
+      </Text>
+      <Text fx:id="createAccount" fill="#3359d7" layoutX="141.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            text="Create account?" underline="true" wrappingWidth="101.0664291381836" onMouseClicked="#handleCreateAccountClick"/>
+      <Button layoutX="117.0" layoutY="189.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="75.0"
+              style="-fx-background-color: #87FF65;" text="Login" onAction="#handleLoginButtonClick"/>
+   </Pane>
+</AnchorPane>
